@@ -3,33 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Profile</title>
-
+    <title>Student Registration Form</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="profile-card">
+<div class="container">
+    <h2>Student Registration Form</h2>
 
-        <h1>Student Profile</h1>
+    <form id="registrationForm">
 
-        <img src="https://via.placeholder.com/150" alt="Student Photo">
+        <label>Student Name</label>
+        <input type="text" id="name">
 
-        <h2 id="name">BHARATH ROBBI</h2>
+        <label>Email</label>
+        <input type="text" id="email">
 
-        <p><strong>Roll No:</strong>A24126511169</p>
+        <label>Mobile Number</label>
+        <input type="text" id="mobile">
 
-        <p><strong>Branch:</strong> INFORMATION TECHNOLOGY</p>
+        <label>Password</label>
+        <input type="password" id="password">
 
-        <p><strong>Email:</strong> robbibharath@gmail.com</p>
+        <label>Confirm Password</label>
+        <input type="password" id="confirmPassword">
 
-        <button onclick="showDetails()">Show Details</button>
+        <button type="submit">Submit</button>
 
-        <h3 id="message"></h3>
+    </form>
 
-    </div>
+    <p id="message"></p>
+</div>
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
